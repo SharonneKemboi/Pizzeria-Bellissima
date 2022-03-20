@@ -1,5 +1,6 @@
 # Pizzeria-Bellissima
-### BY Sharonne Kemboi , 20/03/2022
+
+### By  Sharonne Kemboi ,  20/03/2022
 
 
 ## Screenshot
@@ -28,7 +29,7 @@ This is a responsive page website for a Pizzeria Bellissima restaurant. It is a 
 3.	Information about Pezziria Bellissima and the cooking tradition of the Pizza Restaurant
 4.	A contact form
 
-Here is the [ live site]()
+Here is the [ live site](https://sharonnekemboi.github.io/Pizzeria-Bellissima/)
 
 
 ## Setup/Installation Requirements
