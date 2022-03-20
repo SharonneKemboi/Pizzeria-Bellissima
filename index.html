@@ -13,14 +13,15 @@
 </head>
   <body>
    <div class="jumbotron-fluid">
-        <div id="header">
+        <div id="header" >
             <nav class="navbar navbar-expand-md navbar-dark " style="opacity: 0.9;">
+                
                 <img src="images/logo-removebg-preview (1).png" alt="logo" height="100px" srcset="">
                 <h3>Pizzeria Bellissima!</h3>
                 <ul class="nav-items ">
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#orders">Order</a></li>
+                    <li><a href="#location">Location</a></li>
                     <li><a href="#contactus">Contact Us</a></li>
                 </ul>
             </nav>
@@ -57,7 +58,7 @@
        </a>
       </div>
     </div>
-    <div class="jumbotron jumbotron-fluid text-light mt-3" style="background-image: url(images/bg.jpg); background-repeat: no-repeat; background-size: cover; ">
+    <div class="jumbotron jumbotron-fluid text-light mt-1" style="background-image: url(images/bg.jpg); background-repeat: no-repeat; background-size: cover; ">
         <div class="container">
             <div id="aboutus">
                 <h3 class="display-3 " style="font-family: 'Gabriela';">About Us</h3>
@@ -85,7 +86,7 @@
                          <div class="card-body text-center">
                              <div class="sizeof-pizza">
                                  <h4 class="card-title">Margherita Pizza</h4>
-                                 <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myorder">Buy Pizza</button>
+                                 <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myOrder">Buy Pizza</button>
 
                              </div>
                          </div>
@@ -100,7 +101,7 @@
                         <div class="card-body text-center">
                             <div class="sizeof-pizza">
                                 <h4 class="card-title">La Saporita</h4>
-                                <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myorder">Buy Pizza</button>
+                                <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myOrder">Buy Pizza</button>
 
                             </div>
                         </div>
@@ -115,7 +116,7 @@
                         <div class="card-body text-center">
                             <div class="sizeof-pizza">
                                 <h4 class="card-title">Mozarella Bon Feti</h4>
-                                <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myorder">Buy Pizza</button>
+                                <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myOrder">Buy Pizza</button>
 
                             </div>
                         </div>
@@ -125,7 +126,158 @@
                         </div>
 
                     </div>
-                    
+
+                    <!--Order-->
+             <div class="modal fade" id="myOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLabel">Your Order</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+                         </div>
+                         <!--form-->
+                         <form id="orders">
+                             <div class="modal-body">
+                                 <div id="hide-now">
+                                     <p>Select Pizza: <span class="sizeof-pizza"></span></p>
+                                     <select id="pizzaname">
+                                        <option selected value="0">Select</option>
+                                        <option value="Margherita Pizza">Margherita Pizza</option>
+                                        <option value="La Saporita">La Saporita</option>
+                                        <option value="Mozarella Bon Feti">Mozarella Bon Feti</option>
+                                     </select>
+                           <hr> 
+                                     <p>Pizza size selected: <span class="sizeof-pizza"></span></p>
+                                     <select id="pizzasize">
+                                        <option selected value="0">Select</option>
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                     </select> 
+                          <hr>
+                                    <p>Select type of crust:</p>
+                                    <select id="pizzacrust">
+                                        <option selected value="0">Select</option>
+                                        <option value="Crispy">Cracker Crust: Ksh. 400</option>
+                                        <option value="Stuffed">Stuffed Crust: Ksh. 500</option>
+                                        <option value="Gluten-free">Bagels Crust: Ksh. 400</option>
+                                    </select>
+
+                          <hr>
+                                     <p>Select Pizza toppings:</p>
+                                     <div class="form-check form-check-inline" id="tops">
+                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Pepperoni" name="toppings">
+                                         <label class="form-check-label" for="inlineCheckbox1">Sausage</label>
+                                     </div>
+                                     <div class="form-check form-check-inline">
+                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Pepperoni" name="toppings">
+                                         <label class="form-check-label" for="inlineCheckbox2">Pepperoni</label>
+                                        </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Onions" name="toppings">
+                                        <label class="form-check-label" for="inlineCheckbox3">Extra Cheese</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Bacon" name="toppings">
+                                        <label class="form-check-label" for="inlineCheckbox4">Bacon</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Bacon" name="toppings">
+                                        <label class="form-check-label" for="inlineCheckbox4">Black Olives</label>
+                                    </div>
+
+                          <hr>
+
+                                    <p>Pickup Or Delivery?</p>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="pickup-option" name="pickup-delivery" checked>
+                                        <label class="form-check-label" for="pickup-option">Pickup</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="delivery-option"
+                                            name="pickup-delivery">
+                                        <label class="form-check-label" for="delivery-option">Delivery</label>
+                                    </div>
+
+                                    <div id="pickup">
+                                     <hr>
+                                        <h5>Pickup Details:</h5>
+                                        <div class="form-group">
+                                            <label for="your-name">Enter Your Name</label>
+                                            <input type="text" class="form-control" id="your-name" required>
+                                        </div>
+                                    </div>
+
+                                    <div id="delivery">
+                                        <hr>
+                                        <h5>Enter delivery details:</h5>
+                                        <div class="form-group">
+                                            <label for="your-name">Your Name</label>
+                                            <input type="text" class="form-control" id="your-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="delivery-date">Delivery Date</label>
+                                            <input type="date" class="form-control" id="delivery-date" required>
+                                        </div>
+                                        <div id="address">
+                                            <div class="address">
+                                                <div class="form-group">
+                                                    <label for="house">Apartment Name.</label>
+                                                    <input type="text" class="form-control" id="house" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="road">Street Road </label>
+                                                    <input type="text" class="form-control" id="road" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="city">City</label>
+                                                    <input type="text" class="form-control" id="city" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    </div>
+                                    <div id="more-order"></div>
+
+                                    <div id="show-now">
+                                        <table class="table container">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Pizza Name</th>
+                                                    <th scope="col">Size</th>
+                                                    <th scope="col">Crust</th>
+                                                    <th scope="col">Toppings</th>
+                                                    <th scope="col">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row" id="pizzaname"></td>
+                                                    <td scope="row" id="pizzasize"></td>
+                                                    <td scope="row" id="pizzacrust"></td>
+                                                    <td scope="row" id="pizzatopp"></td>
+                                                    <td scope="row" id="pizzatotal"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" id="more">Order
+                                        More
+                                    </button>
+                                    <button type="button" class="btn btn-success" id="checkout">Checkout</button>
+                                    <button type="button" class="btn btn-success" id="place-order">Place
+                                        Order</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
                  </div>
              </div>
