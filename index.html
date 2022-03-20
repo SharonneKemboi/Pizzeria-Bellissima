@@ -26,19 +26,19 @@
             </nav>
         </div>    
 
-   <div id="carouselId" class="carousel slide" data-ride="carousel">
-       <ol class="carousel-indicators">
+      <div id="carouselId" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
            <li data-target="#carouselId" data-slide-to="1"></li>
-       </ol>
-       <div class="carousel-inner" role="listbox">
-           <div class="carousel-item active bg-dark" >
+          </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active bg-dark" >
                <img src="images/pizza back.jpg" class="pizzaimg" style="height: 90vh; width: 100%; opacity: 0.6;" alt="First slide">
                <div class="carousel-caption d-none d-md-block">
                    <h2 class="heading2 " style="color: rgb(76, 250, 33); font-size: 70px; font-weight: 900;">Pizzeria Bellissima</h2>
                    <p class="para" style="color: rgb(246, 248, 241); font-size: 30px;" >THE TEMPLE OF PIZZA</p>
                </div>
-           </div>
+              </div>
            <div class="carousel-item bg-dark" style="height: 90vh;">
                <img src="images/pexels-photo-3053082.jpeg" alt="Second slide">
                <div class="carousel-caption d-none d-md-block">
@@ -46,9 +46,8 @@
                    <p class="para" style="color: white; font-size: 30px;">Pizzeria Bellissima Has Got Your Back</p>
                </div>
            </div>
-           
-       </div>
-       <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+           </div>
+           <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
            <span class="sr-only">Previous</span>
        </a>
@@ -56,33 +55,85 @@
            <span class="carousel-control-next-icon" aria-hidden="true"></span>
            <span class="sr-only">Next</span>
        </a>
-   </div>
-</div>
- 
-<div class="jumbotron jumbotron-fluid text-light mt-3" style="background-image: url(images/bg.jpg); background-repeat: no-repeat; background-size: cover; opacity: 0.9;">
-    
-    <div class="container">
-        <div id="aboutus">
-        <h3 class="display-3 " style="font-family: 'Gabriela';">About Us</h3>
-        <p>Pizzeria Bellissima has been in business since 2017 in Kenya and Rwanda. All of our pizzas are made according to the Pizzare family tradition.
-            We use only the highest-quality ingredients, including buffalo-milk mozzarella and San Marzano tomatoes imported from Italy as well as our fresh, 
-            home-made mozzarella. All pizzas are drizzled with 100% Italian extra-virgin olive oil and then baked to perfection at 850 degrees in a Pizzare Bellissima 
-            wood-fired brick oven imported from Italy. The finished product is a pizza whose taste will a feeling of being teleported to  Italy.
-            <br>
-            We recommend our three specialties – the Margherita , Big-Mozarella, and La Saporita.
-            <br>
-            We look forwarding to seeing you soon, Pizzare Bellissima family</p>
-        <p class="lead">
-            <a class="btn btn-success btn-lg" href="#" role="button">Read More</a>
-        </p>
-        </div>
+      </div>
     </div>
-</div>
+    <div class="jumbotron jumbotron-fluid text-light mt-3" style="background-image: url(images/bg.jpg); background-repeat: no-repeat; background-size: cover; ">
+        <div class="container">
+            <div id="aboutus">
+                <h3 class="display-3 " style="font-family: 'Gabriela';">About Us</h3>
+                <p>Pizzeria Bellissima has been in business since 2017 in Kenya and Rwanda. All of our pizzas are made according to the Pizzare family tradition. We use only the highest-quality ingredients, including buffalo-milk mozzarella and San Marzano tomatoes imported from Italy as well as our fresh, 
+                home-made mozzarella. <br><span class="pspan" style="color: rgb(18, 151, 13);" >All pizzas are drizzled with 100% Italian extra-virgin olive oil and then baked to perfection at 850 degrees in a Pizzare Bellissima 
+                wood-fired brick oven imported from Italy. The finished product is a pizza whose taste gives a feeling of being teleported to  Italy.
+                We recommend our three specialties – the Margherita , Big-Mozarella, and La Saporita.<br>We look forwarding to seeing you soon, Pizzare Bellissima family</span></p>
+         
+                <p class="lead"><a class="btn btn-success btn-lg" href="#" role="button">Read More</a></p>
+            </div>
+        </div>
+    </div> <br>
+    <!--Horizontal line to separate -->
+     <hr width="30%" color="#FE5A07" border-color="#FE5A07">
 
+     <!--Menu section-->
+     <section id="menu">
+         <div class="container">
+             <h2 class="text-center mt-0">Our Menu</h2>
+             <hr class="divider my-4">
+             <div class="row no-gutters mb-4">
+                 <div class="card-deck">
+                     <div class="card">
+                         <img src="images/margeritta.jpg"  class="card-img" alt="" srcset="">
+                         <div class="card-body text-center">
+                             <div class="sizeof-pizza">
+                                 <h4 class="card-title">Margherita Pizza</h4>
+                                 <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myorder">Buy Pizza</button>
 
+                             </div>
+                         </div>
+                         <div class="card-footer bg-dark">
+                             <medium class="text-muted ">Ingredients :  San Marzano Sauce, Mozzarella Di Bufala, Sausages,  Pecorino and Basil</medium>
 
+                         </div>
 
-      
+                     </div>
+                     <div class="card">
+                        <img src="images/pexels-photo-263041.jpeg"  class="card-img" alt="" srcset="">
+                        <div class="card-body text-center">
+                            <div class="sizeof-pizza">
+                                <h4 class="card-title">La Saporita</h4>
+                                <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myorder">Buy Pizza</button>
+
+                            </div>
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <medium class="text-muted ">Ingredients : Homemade Genovese Sauce,  Homemade Mozzarella, Fried eggplant, Splashes of Pesto and  Pecorino</medium>
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="images/pizza 108.jpg"  class="card-img" alt="" srcset="">
+                        <div class="card-body text-center">
+                            <div class="sizeof-pizza">
+                                <h4 class="card-title">Mozarella Bon Feti</h4>
+                                <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myorder">Buy Pizza</button>
+
+                            </div>
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <medium class="text-muted ">Ingredients :  Cream, Homemade Mozzarella, Beef, italian Tomatoes, Oregano, Garlic, Hot Honey and Basil</medium>
+
+                        </div>
+
+                    </div>
+                    
+
+                 </div>
+             </div>
+         </div>
+
+     </section>
+
+            
       
       
     <!-- Optional JavaScript -->
