@@ -24,6 +24,8 @@
     });
 
 });
+
+//Business logic
 // constructor pizza
 function Pizza(crust, size) {
     this.crust = crust;
@@ -31,4 +33,40 @@ function Pizza(crust, size) {
     this.toppings = [];
     this.price = 0;
   }
+//protoptype
 
+  Pizza.prototype.cost = function() {
+    var price = 0;
+    if (this.size === "Small") {
+      price += 7;
+    } else if (this.size === "Medium") {
+      price += 9;
+    } else if (this.size === "Large") {
+      price += 11;
+    } else {
+      price+= 16;
+    }
+
+  
+    for (var i = 0; i < this.toppings.length; i++) {
+      price += 2;
+    }
+    if (this.crust === "Cripsy"){
+        price += 2;
+    }else if (this.crust=== "Stuffed") {
+        price += 1.5;
+    }else {
+        price += 1;
+    }
+    this.price = price;
+  }
+  Pizza.prototype.toppingsList = function() {
+    if (this.toppings.length > 0) {
+        return this.toppings.join(", ");
+    } else {
+      return "None";
+    }
+  }
+
+
+  
