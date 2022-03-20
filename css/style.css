@@ -147,3 +147,51 @@ button#pickup, button#delivery {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.contacts {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+
+.contacts h1 {
+  position: relative;
+  top: 30px;
+}
+.text{
+  margin-bottom: 20px;
+}
+
+.contact-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-control{
+ 
+  color: white;
+}
+.input{
+  margin-top: 30px;
+}
+.mytext{
+  font-family: "Gabriela", "sans-serif";
+}
+
+.footer {
+  background-color: black;
+  padding: 40px 0px;
+}
+
+.address p {
+  margin: 0px;
+  color:#FE5A07;
+}
+
+.opening {
+  color: var(--bs-dark);
+}
+
+.social i {
+  margin: 5px 10px;
+  
+}
+

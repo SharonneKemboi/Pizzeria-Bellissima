@@ -145,4 +145,27 @@ function Pizza(crust, size) {
       $("button.reset").click(function() {
         location.reload();
       });
+
+      //form validation
+
+      $("form#form").submit(function(event){
+        // event.preventDefault();
+       var name = $("input#name").val();
+       var email = $("input#email").val();
+       var message = $("textarea#message").val();
+
+       if ($("input#name").val() && $("input#email").val()){
+       alert ("Hola  " + name + ", we have received your Message. Thank you for reaching out to Pizzeria Bellissimo, We shall get back to you ASAP!!");
+       }
+       else {
+           alert("Please enter your name and email!");
+       }
+         
+   });
+
+
     });
+
+    
+   
+  
