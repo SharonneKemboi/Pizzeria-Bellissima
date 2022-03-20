@@ -3,7 +3,7 @@
 
 
 ## Screenshot
-<img src="">
+<img src="https://github.com/SharonneKemboi/Pizzeria-Bellissima/blob/master/images/Screenshot%202from%202022-03-20%2022-02-38.png">
 
 ## Screenshot
 <img src="https://github.com/SharonneKemboi/Pizzeria-Bellissima/blob/master/images/Screenshot%20from%202022-03-20%2013-31-14.png" width="900px" height="440px">
@@ -22,16 +22,13 @@
 
 ## Description
 
-This is a responsive one page website for a Pizzeria Bellissima restaurant. It is a  website that provides visitors with:
+This is a responsive page website for a Pizzeria Bellissima restaurant. It is a  website that provides visitors with:
 1.	Pizza Menu with toppings details, prices, pictures and a modal window for Order options
 2.	Contact details including opening hours, address and phone number
 3.	Information about Pezziria Bellissima and the cooking tradition of the Pizza Restaurant
 4.	A contact form
 
-Here is the live link[ live site]()
-
-
-
+Here is the [ live site]()
 
 
 ## Setup/Installation Requirements
