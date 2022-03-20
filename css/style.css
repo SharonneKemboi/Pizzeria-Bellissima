@@ -65,3 +65,44 @@ li a:hover {
   line-height: 2;
   font-size: 20px;
 }
+
+.jumbotron p{
+  color: #f1f5f0;
+}
+
+#menu{
+  padding-right: 12%;
+  padding-left: 12%;
+  text-align: center;
+  
+ 
+}
+.carousel-inner{
+  padding-bottom: 1%;
+}
+.carousel-multi-item .carousel-indicators li{
+ /*style carousel indicators*/
+  background-color: #FE5A07;
+  height: 1rem;
+  width: 1rem;
+}
+.carousel-multi-item .carousel-indicators .active{
+ /* style active carousel indicator*/
+  background-color: #FE5A07;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+
+.card {
+  border: none;
+}
+
+.card-footer {
+  background: none;
+}
+
+.divider {
+  border: solid #FE5A07 3px;
+  width: 10%;
+}
