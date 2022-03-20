@@ -4,7 +4,7 @@
   opacity: 0.6;
   position: static;
 }
-#header p{
+#header h3{
   font-family: 'Gabriela', cursive;
   margin: 0;
   font-size: 30px;
@@ -40,15 +40,6 @@ li a:hover {
   text-align: center;
   padding: 18%;
 }
-#header h1{
-  font-size: 120px;
-  letter-spacing: 1px;
-  font-family: 'Gabriela', cursive;
-}
-#header h4{
-  font-size: 19px;
-  font-family: 'Lato', sans-serif;
-}
 .carousel-caption {
   color:#fff;
   text-align:center;
@@ -60,11 +51,17 @@ li a:hover {
   -ms-transform:translate(0, -50%);
   transform:translate(0, -50%);
 }
-.carousel-caption h5 {
+.carousel-caption h2 {
   font-family: 'Gabriela', sans-serif;
   font-weight: 700;
 }
 .carousel-caption p {
   font-family: 'Gabriela', cursive;
   font-size: 40px;
+}
+
+#aboutus{
+  font-family: 'Gabriela', sans-serif;
+  line-height: 2;
+  font-size: 20px;
 }
