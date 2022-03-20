@@ -112,6 +112,12 @@ li a:hover {
   border: solid #FE5A07 3px;
   width: 10%;
 }
+#size{
+  color: rgb(19, 18, 18);
+}
+#crust{
+  color: rgb(53, 51, 51);
+}
 
 .pizzare {
   margin-left: 30%;
@@ -146,6 +152,9 @@ button#pickup, button#delivery {
 #deliveryCost {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#pickupForm{
+  color: #f1f5f0;
 }
 
 .contacts {
