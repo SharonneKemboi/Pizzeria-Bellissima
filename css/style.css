@@ -121,11 +121,13 @@ li a:hover {
 
 .myHeader {
   text-decoration: underline;
+  font-size: 30px;
+  color: #FE5A07;
 }
 
 .cartItem {
   cursor: pointer;
-  color: #0088cc;
+  color: #0af72a;
 }
 
 .cartItem:hover {
