@@ -1,9 +1,20 @@
+html{
+ scroll-behavior: smooth ;
+}
+body{
+  font-family: 'Gabriela', sans-serif;
+}
+
 
 .navbar{
   background-color: black;
   opacity: 0.6;
-  position: static;
+ 
+  
 }
+
+
+
 #header h3{
   font-family: 'Gabriela', cursive;
   margin: 0;
@@ -105,4 +116,18 @@ li a:hover {
 .divider {
   border: solid #FE5A07 3px;
   width: 10%;
+}
+
+
+#delivery, #place-order, #show-now {
+  display: none;
+}
+
+.padding {
+  padding: 0 1.7rem 0 0.75rem;
+}
+
+.border {
+  border-radius: 15px;
+  
 }
