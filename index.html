@@ -14,13 +14,14 @@
   <body>
    <div class="jumbotron-fluid">
         <div id="header" >
-            <nav class="navbar navbar-expand-md navbar-dark " style="opacity: 0.9;">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark " style="opacity: 0.9;">
                 
                 <img src="images/logo-removebg-preview (1).png" alt="logo" height="100px" srcset="">
                 <h3>Pizzeria Bellissima!</h3>
                 <ul class="nav-items ">
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="#menu">Menu</a></li>
+                    <li> <a href="#order">Order</a> </li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#contactus">Contact Us</a></li>
                 </ul>
@@ -86,7 +87,7 @@
                          <div class="card-body text-center">
                              <div class="sizeof-pizza">
                                  <h4 class="card-title">Margherita Pizza</h4>
-                                 <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myOrder">Buy Pizza</button>
+                                
 
                              </div>
                          </div>
@@ -101,7 +102,7 @@
                         <div class="card-body text-center">
                             <div class="sizeof-pizza">
                                 <h4 class="card-title">La Saporita</h4>
-                                <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myOrder">Buy Pizza</button>
+                                
 
                             </div>
                         </div>
@@ -116,7 +117,7 @@
                         <div class="card-body text-center">
                             <div class="sizeof-pizza">
                                 <h4 class="card-title">Mozarella Bon Feti</h4>
-                                <button type="submit" class="btn btn-success border" data-togglle="modal" data-target="#myOrder">Buy Pizza</button>
+                               
 
                             </div>
                         </div>
@@ -126,164 +127,175 @@
                         </div>
 
                     </div>
+                    <br>
+                    <div class="row pt-3">
+                    <div class="card">
+                        <img src="images/menu-item2.png"  class="card-img" alt="" srcset="">
+                        <div class="card-body text-center">
+                            <div class="sizeof-pizza">
+                                <h4 class="card-title">Cheesy Cheese Pizza</h4>
+                               
 
-                    <!--Order-->
-             <div class="modal fade" id="myOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                 <div class="modal-dialog" role="document">
-                     <div class="modal-content">
-                         <div class="modal-header">
-                             <h5 class="modal-title" id="exampleModalLabel">Your Order</h5>
-                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
-                         </div>
-                         <!--form-->
-                         <form id="orders">
-                             <div class="modal-body">
-                                 <div id="hide-now">
-                                     <p>Select Pizza: <span class="sizeof-pizza"></span></p>
-                                     <select id="pizzaname">
-                                        <option selected value="0">Select</option>
-                                        <option value="Margherita Pizza">Margherita Pizza</option>
-                                        <option value="La Saporita">La Saporita</option>
-                                        <option value="Mozarella Bon Feti">Mozarella Bon Feti</option>
-                                     </select>
-                           <hr> 
-                                     <p>Pizza size selected: <span class="sizeof-pizza"></span></p>
-                                     <select id="pizzasize">
-                                        <option selected value="0">Select</option>
-                                        <option value="small">Small</option>
-                                        <option value="medium">Medium</option>
-                                        <option value="large">Large</option>
-                                     </select> 
-                          <hr>
-                                    <p>Select type of crust:</p>
-                                    <select id="pizzacrust">
-                                        <option selected value="0">Select</option>
-                                        <option value="Crispy">Cracker Crust: Ksh. 400</option>
-                                        <option value="Stuffed">Stuffed Crust: Ksh. 500</option>
-                                        <option value="Gluten-free">Bagels Crust: Ksh. 400</option>
-                                    </select>
-
-                          <hr>
-                                     <p>Select Pizza toppings:</p>
-                                     <div class="form-check form-check-inline" id="tops">
-                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Pepperoni" name="toppings">
-                                         <label class="form-check-label" for="inlineCheckbox1">Sausage</label>
-                                     </div>
-                                     <div class="form-check form-check-inline">
-                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Pepperoni" name="toppings">
-                                         <label class="form-check-label" for="inlineCheckbox2">Pepperoni</label>
-                                        </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Onions" name="toppings">
-                                        <label class="form-check-label" for="inlineCheckbox3">Extra Cheese</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Bacon" name="toppings">
-                                        <label class="form-check-label" for="inlineCheckbox4">Bacon</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Bacon" name="toppings">
-                                        <label class="form-check-label" for="inlineCheckbox4">Black Olives</label>
-                                    </div>
-
-                          <hr>
-
-                                    <p>Pickup Or Delivery?</p>
-                                    <div class="form-check">
-                                        <input type="radio" class="form-check-input" id="pickup-option" name="pickup-delivery" checked>
-                                        <label class="form-check-label" for="pickup-option">Pickup</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input type="radio" class="form-check-input" id="delivery-option"
-                                            name="pickup-delivery">
-                                        <label class="form-check-label" for="delivery-option">Delivery</label>
-                                    </div>
-
-                                    <div id="pickup">
-                                     <hr>
-                                        <h5>Pickup Details:</h5>
-                                        <div class="form-group">
-                                            <label for="your-name">Enter Your Name</label>
-                                            <input type="text" class="form-control" id="your-name" required>
-                                        </div>
-                                    </div>
-
-                                    <div id="delivery">
-                                        <hr>
-                                        <h5>Enter delivery details:</h5>
-                                        <div class="form-group">
-                                            <label for="your-name">Your Name</label>
-                                            <input type="text" class="form-control" id="your-name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="delivery-date">Delivery Date</label>
-                                            <input type="date" class="form-control" id="delivery-date" required>
-                                        </div>
-                                        <div id="address">
-                                            <div class="address">
-                                                <div class="form-group">
-                                                    <label for="house">Apartment Name.</label>
-                                                    <input type="text" class="form-control" id="house" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="road">Street Road </label>
-                                                    <input type="text" class="form-control" id="road" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="city">City</label>
-                                                    <input type="text" class="form-control" id="city" required>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    </div>
-                                    <div id="more-order"></div>
-
-                                    <div id="show-now">
-                                        <table class="table container">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Pizza Name</th>
-                                                    <th scope="col">Size</th>
-                                                    <th scope="col">Crust</th>
-                                                    <th scope="col">Toppings</th>
-                                                    <th scope="col">Total</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row" id="pizzaname"></td>
-                                                    <td scope="row" id="pizzasize"></td>
-                                                    <td scope="row" id="pizzacrust"></td>
-                                                    <td scope="row" id="pizzatopp"></td>
-                                                    <td scope="row" id="pizzatotal"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" id="more">Order
-                                        More
-                                    </button>
-                                    <button type="button" class="btn btn-success" id="checkout">Checkout</button>
-                                    <button type="button" class="btn btn-success" id="place-order">Place
-                                        Order</button>
-                                    </div>
-                                </form>
                             </div>
                         </div>
+                        <div class="card-footer bg-dark">
+                            <medium class="text-muted ">Ingredients :  San Marzano Sauce, Mozzarella Di Bufala, Sausages,  Pecorino and Basil</medium>
+
+                        </div>
+
                     </div>
+                    <div class="card">
+                        <img src="images/menu-item7.png"  class="card-img" alt="" srcset="">
+                        <div class="card-body text-center">
+                            <div class="sizeof-pizza">
+                                <h4 class="card-title">Chicken BBQ Pizza</h4>
+                               
+
+                            </div>
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <medium class="text-muted ">Ingredients :  San Marzano Sauce, Mozzarella Di Bufala, Sausages,  Pecorino and Basil</medium>
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="images/menu-item3.png"  class="card-img" alt="" srcset="">
+                        <div class="card-body text-center">
+                            <div class="sizeof-pizza">
+                                <h4 class="card-title">Pepperoni Pizza</h4>
+                               
+
+                            </div>
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <medium class="text-muted ">Ingredients :  San Marzano Sauce, Mozzarella Di Bufala, Sausages,  Pecorino and Basil</medium>
+
+                        </div>
+
+                    </div>
+
+               
 
                  </div>
              </div>
          </div>
 
      </section>
+
+     <!--order section -->
+
+     <section id="order" class="myorder ">
+         <div class="jumbotron-fluid" style="background-image: url(images/hand-drawn-pizza-logo-on-black-background-vector-36901462.jpg); background-repeat: no-repeat; background-size: cover;
+         width: 100%; height: 100vh;">
+         
+                <div class="pizzare">
+                    <h2 class="heading4 pt-4"  style="color: white;"> Make Your Order</h2>
+                    
+                    <p class="text-center text-light pt-4">All  Our pizzas are drizzled with 100% Italian extra-virgin olive oil and then baked to perfection at 850 degrees in a Pizzare Bellissima wood-fired brick oven </p>
+                    <form id="pizzaForm" style="color: green;">
+                      <p class="myHeader">Select Pizza Size:</p>
+                      <select class="form-control" id="size">
+                        <option value="Small">small $ 5</option>
+                        <option value="Medium">Medium $8</option>
+                        <option value="Large">Large $15</option>
+                        <option value="Extra Large">Extra Large $20</option>
+                      </select>
+                      <br>
+                      <p class="qHeader">Select Pizza Crust:</p>
+                      <select class="form-control" id="crust">
+                        <option value="Cripsy">Naopolean $2</option>
+                        <option value="Stuffed">Stuffed $1.5</option>
+                        <option value="Thin Crust">Thin Crust $1</option>
+                      </select>
+                      <br>
+                      <div class="form-group">
+                        <p class="qHeader">Toppings: ($2 per topping)</p>
+                        <input type="checkbox" name="topping" value="Pizzeria">Pizzeria Sauce<br>
+                        <input type="checkbox" name="topping" value="Saporita">Saporita Cheese<br>
+                        <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
+                        <input type="checkbox" name="topping" value="Olive"> Black Olives<br>
+                        <input type="checkbox" name="topping" value="Pepper"> Pizzeria Pepper<br>
+                        <input type="checkbox" name="topping" value="Pineapple"> Pineapple<br>
+                        <input type="checkbox" name="topping" value="Basil"> Pizzeria Basil<br>
+                        <input type="checkbox" name="topping" value="Mozarella"> Mozarella <br>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-success" id="submitPizza">Place in Cart</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="well cartWell">
+                    <div class="text-center">
+                      <h3>Items in Your Cart</h3>
+                      <h4>Total Sum: $<span class="cartTotal"></span></h4>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-1">
+                      </div>
+                      <div class="col-xs-5">
+                        <ol id="cart">
+                        </ol>
+                      </div>
+                      <div class="col-xs-5" id="show-pizza">
+                        <p id="pizzaListName"></p>
+                        <ul>
+                          <li> Pizza Size: <span class="size"></span></li>
+                          <li>Pizza Crust: <span class="crust"></span></li>
+                          <li>TPizza oppings: <span class="toppings"></span></li>
+                          <li>Total Cost: $<span class="cost"></span></li>
+                        </ul>
+                      </div>
+                      <div class="col-xs-1">
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-danger" id="submitCart">Submit Order</button>
+                    </div>
+                  </div>
+                  <div class="well choiceWell text-center">
+                    <p>You can either pick up your order or get it delivered to your place.</p>
+                    <p>Pick Up cost $0</p>
+                    <button type="button" class="btn btn-success" id="pickup">Pick Up</button>
+                    <p id="deliveryCost">Delivery cost $5</p>
+                    <button type="button" class="btn btn-success" id="delivery">Delivery</button>
+                  </div>
+            
+                  <div class="well pickupWell text-center">
+                    <form id="pickupForm">
+                      <div class="form-group">
+                        <label for="name">Enter the name of the person picking up your order:</label>
+                        <input id="pickupName" class="form-control" type="text">
+                      </div>
+                      <button type="button" class="btn btn-success" id="submitPickupForm">Submit</button>
+                    </form>
+                    <div id="pickupEnd">
+                      <p>Thanks for ordering from Pizzeria Bellissima. <span class="nameInput"></span>  You can pick up your order in the next 25 to 40 minutes!</p>
+                      <button type="button" class="btn btn-success reset">Order More Pizza!</button>
+                    </div>
+                  </div>
+                  <div class="well deliveryWell text-center">
+                    <form id="deliveryForm">
+                      <div class="form-group">
+                        <label for="name" required>Enter Name:</label>
+                        <input id="deliveryName" class="form-control" type="text">
+                        <label for="address">Enter Address:</label>
+                        <input id="address" class="form-control" type="text">
+                        <label for="city">Enter City:</label>
+                        <input id="city" class="form-control" type="text">
+                        <label for="county">Enter County:</label>
+                        <input id="county" class="form-control" type="text">
+                      </div>
+                      <button type="button" class="btn btn-success" id="submitDeliveryForm">Submit</button>
+                    </form>
+                    <div id="deliveryEnd">
+                      <p>Hurray! Pizzeria Bellissima Will be sending this order to <span class="nameInput"></span> at <span class="addressInput"></span>.</p>
+                      <p>You can expect your order to arrive in 30-45 minutes.</p>
+                      <button type="button" class="btn btn-success reset">Want More Pizzeria Bellissima Pizza ? Order More Pizza!</button>
+                    </div>
+                  </div>
+            
+                </div>
 
             
       
