@@ -68,5 +68,81 @@ function Pizza(crust, size) {
     }
   }
 
+//UI logic
 
-  
+  $(document).ready(function() {
+    var total = 0;
+    $(".cartTotal").text(total);
+    $("#pizzaForm").submit(function(event) {
+        event.preventDefault();
+        var crust = $("#crust").val();
+        var size = $("#size").val();
+        var newPizza = new Pizza(crust, size);
+    
+        $("input:checkbox[name=topping]:checked").each(function() {
+          var toppingChoice = $(this).val();
+          newPizza.toppings.push(toppingChoice);
+        });
+    
+        newPizza.cost();
+        total += newPizza.price;
+    
+        $(".cartTotal").text(total);
+        $(".cartWell").show();;
+        $("#cartHeader").show();
+        $("ol#cart").append("<li><span class='cartItem'>" + newPizza.size + " " + newPizza.crust + " Pizza" + "</span></li>");
+    
+        $(".cartItem").last().click(function() {
+          $("#show-pizza").show();
+          $("#pizzaListName").text(newPizza.size + " " + newPizza.crust + " Pizza");
+          $(".size").text(newPizza.size);
+          $(".crust").text(newPizza.crust);
+          $(".toppings").text(newPizza.toppingsList());
+          $(".cost").text(newPizza.price);
+        });
+        $("#pizzaForm")[0].reset();
+      });
+
+      $("button#submitCart").click(function() {
+        $(".pizzare").hide();
+        $("button#submitCart").hide();
+        $(".choiceWell"). show();
+      });
+    
+      $("button#pickup").click(function() {
+        $(".choiceWell").hide();
+        $(".pickupWell").show();
+      });
+    
+      $("button#delivery").click(function() {
+        total += 5;
+        $(".cartTotal").text(total);
+        $(".choiceWell").hide();
+        $(".deliveryWell").show();
+      });
+    
+      $("button#submitPickupForm").click(function() {
+        var userName = $("input#pickupName").val();
+        $(".nameInput").text(userName);
+        $("form#pickupForm").hide();
+        $("#pickupEnd").show()
+        if((pickUpForm)===""){
+            return "Please enter your details"
+        }
+      });
+    
+      $("button#submitDeliveryForm").click(function() {
+        var userName = $("input#deliveryName").val();
+        var address = $("input#address").val();
+        var city = $("input#city").val();
+        var county = $("input#county").val();
+        $(".nameInput").text(userName);
+        $(".addressInput").text(address + ", " + city + " " + county);
+        $("form#deliveryForm").hide();
+        $("#deliveryEnd").show();
+      });
+    
+      $("button.reset").click(function() {
+        location.reload();
+      });
+    });
