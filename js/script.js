@@ -14,7 +14,7 @@
             navbar.fadeIn();
             navbar.removeClass('navbar-dark bg-transparent').addClass('navbar-light bg-custom');
         } 
-        else if(st < scrollTop && st > 200) {
+        else if(scrollTop< scrollTop && scrollTop > 200) {
             navbar.removeClass('navbar-dark bg-transparent').addClass('navbar-light bg-custom');
         }
         else {
@@ -88,7 +88,7 @@ function Pizza(crust, size) {
         total += newPizza.price;
     
         $(".cartTotal").text(total);
-        $(".cartWell").show();;
+        $(".cartmyCart").show();;
         $("#cartHeader").show();
         $("ol#cart").append("<li><span class='cartItem'>" + newPizza.size + " " + newPizza.crust + " Pizza" + "</span></li>");
     
@@ -106,19 +106,19 @@ function Pizza(crust, size) {
       $("button#submitCart").click(function() {
         $(".pizzare").hide();
         $("button#submitCart").hide();
-        $(".choiceWell"). show();
+        $(".choicemyCart"). show();
       });
     
       $("button#pickup").click(function() {
-        $(".choiceWell").hide();
-        $(".pickupWell").show();
+        $(".choicemyCart").hide();
+        $(".pickupmyCart").show();
       });
     
       $("button#delivery").click(function() {
         total += 5;
         $(".cartTotal").text(total);
-        $(".choiceWell").hide();
-        $(".deliveryWell").show();
+        $(".choicemyCart").hide();
+        $(".deliverymyCart").show();
       });
     
       $("button#submitPickupForm").click(function() {

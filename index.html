@@ -64,7 +64,7 @@
         <div class="container">
             <div id="aboutus">
                 <h3 class="display-3 " style="font-family: 'Gabriela';">About Us</h3>
-                <p>Pizzeria Bellissima has been in business since 2017 in Kenya and Rwanda. All of our pizzas are made according to the Pizzare family tradition. We use only the highest-quality ingredients, including buffalo-milk mozzarella and San Marzano tomatoes imported from Italy as well as our fresh, 
+                <p>Pizzeria Bellissima has been in business since 2017 in Kenya and Rwanda. All of our pizzas are made according to the Pizzare family tradition. We use only the highest-quality ingredients, including buffalo-milk mozzarella and San Marzano tomatoes imported from Italy as myCart as our fresh, 
                 home-made mozzarella. <br><span class="pspan" style="color: rgb(18, 151, 13);" >All pizzas are drizzled with 100% Italian extra-virgin olive oil and then baked to perfection at 850 degrees in a Pizzare Bellissima 
                 wood-fired brick oven imported from Italy. The finished product is a pizza whose taste gives a feeling of being teleported to  Italy.
                 We recommend our three specialties – the Margherita , Big-Mozarella, and La Saporita.<br>We look forwarding to seeing you soon, Pizzare Bellissima family</span></p>
@@ -209,7 +209,7 @@
                       </select>
                       <br>
                       <div class="form-group">
-                        <p class="myHeader" style="font-size:30px; color:#FE5A07;">Toppings: ($4 per topping)</p>
+                        <p class="myHeader" style="font-size:30px; color:#FE5A07;">Toppings: ($2 per topping)</p>
                         <input type="checkbox" name="topping" value="Pizzeria">Pizzeria Sauce<br>
                         <input type="checkbox" name="topping" value="Saporita">Saporita Cheese<br>
                         <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
@@ -220,14 +220,14 @@
                         <input type="checkbox" name="topping" value="Mozarella"> Mozarella <br>
                       </div>
                       <div class="text-center">
-                        <button type="submit" class="btn btn-success" id="submitPizza">Place in Cart</button>
+                        <button type="submit" class="btn btn-success mb-4" id="submitPizza">Place in Cart</button>
                       </div>
                     </form>
                   </div>
-                  <div class="well cartWell">
-                    <div class="text-center">
-                      <h3>Items in Your Cart</h3>
-                      <h4>Total Sum: $<span class="cartTotal"></span></h4>
+                  <div class="myCart cartmyCart">
+                    <div class="text-center text-light">
+                      <h3>Your Cart</h3>
+                      <h4>Total Cost Is : $<span class="cartTotal"></span></h4>
                     </div>
                     <div class="row">
                       <div class="col-xs-1">
@@ -236,46 +236,46 @@
                         <ol id="cart">
                         </ol>
                       </div>
-                      <div class="col-xs-5" id="show-pizza">
+                      <div class="col-xs-5 text-light"  id="show-pizza">
                         <p id="pizzaListName"></p>
                         <ul>
-                          <li> Pizza Size: <span class="size"></span></li>
+                          <li>Pizza Size: <span class="size"></span></li>
                           <li>Pizza Crust: <span class="crust"></span></li>
-                          <li>TPizza oppings: <span class="toppings"></span></li>
+                          <li>Pizza Toppings: <span class="toppings"></span></li>
                           <li>Total Cost: $<span class="cost"></span></li>
                         </ul>
                       </div>
                       <div class="col-xs-1">
                       </div>
                     </div>
-                    <div class="text-center">
-                      <button type="button" class="btn btn-danger" id="submitCart">Submit Order</button>
+                    <div class="text-center ">
+                      <button type="button" class="btn btn-light text-success bg-success text-light mb-4" id="submitCart">Submit Order</button>
                     </div>
                   </div>
-                  <div class="well choiceWell text-center">
+                  <div class="myCart choicemyCart text-center text-light">
                     <p>You can either pick up your order or get it delivered to your place.</p>
                     <p>Pick Up cost $0</p>
-                    <button type="button" class="btn btn-success" id="pickup">Pick Up</button>
+                    <button type="button" class="btn btn-success " id="pickup">Pick Up</button>
                     <p id="deliveryCost">Delivery cost $5</p>
                     <button type="button" class="btn btn-success" id="delivery">Delivery</button>
                   </div>
             
-                  <div class="well pickupWell text-center">
+                  <div class="myCart pickupmyCart text-center">
                     <form id="pickupForm">
-                      <div class="form-group" >
+                      <div class="form-group " >
                         <label for="name">Enter the name of the person picking up your order:</label>
-                        <input id="pickupName" class="form-control" type="text">
+                        <input id="pickupName" class="form-control " style="width: 40%; margin-left: 30%;"  type="text">
                       </div>
                       <button type="button" class="btn btn-success "  style="margin: 20px;" id="submitPickupForm">Submit</button>
                     </form>
-                    <div id="pickupEnd">
+                    <div id="pickupEnd" style="color: white;">
                       <p>Thanks for ordering from Pizzeria Bellissima. <span class="nameInput"></span>  You can pick up your order in the next 25 to 40 minutes!</p>
                       <button type="button" class="btn btn-success reset">Order More Pizza!</button>
                     </div>
                   </div>
-                  <div class="well deliveryWell text-center">
+                  <div class="myCart deliverymyCart text-center">
                     <form id="deliveryForm">
-                      <div class="form-group">
+                      <div class="form-group text-light" style="width: 40%; margin-left: 30%;">
                         <label for="name" required>Enter Name:</label>
                         <input id="deliveryName" class="form-control" type="text">
                         <label for="address">Enter Address:</label>
@@ -287,7 +287,7 @@
                       </div>
                       <button type="button" class="btn btn-success" id="submitDeliveryForm">Submit</button>
                     </form>
-                    <div id="deliveryEnd">
+                    <div id="deliveryEnd" style="color: white;">
                       <p>Hurray! Pizzeria Bellissima Will be sending this order to <span class="nameInput"></span> at <span class="addressInput"></span>.</p>
                       <p>You can expect your order to arrive in 30-45 minutes.</p>
                       <button type="button" class="btn btn-success reset">Want More Pizzeria Bellissima Pizza ? Order More Pizza!</button>
@@ -340,7 +340,7 @@
                 <div class="col-lg-4 ml-5" >
                     <h4 class="text-light">Pizzeria Bells Opening Hours</h4>
                     <!--table-->
-                    <div class="table-responsive pl-4">
+                    <div class="table-responsive pl-4 " style="color: #FE5A07;"  >
                         <table class="table table-borderless opening">
                             <tbody>
                                 <tr>
@@ -368,7 +368,7 @@
             <!--socialmedia nad copyright-->
             <div class="d-flex justify-content-between">
                 <div><p class="text-light pl-5">Copyright 2022&nbsp;<span class="theme-color pl-5">Pizzerria Bellissima </span></p>
-                    <i class="fa fa-copyright" aria-hidden="true"> Made With Love --- All Copyrights Are Reserved </i>
+                    <i class="fa fa-copyright" style="color: #FE5A07;" aria-hidden="true"> Made With Love --- All Copyrights Are Reserved </i>
                 </div>
                 <div class="social">
                     <i class="fab fa-facebook-f " style="color:rgb(13, 36, 238);"></i>

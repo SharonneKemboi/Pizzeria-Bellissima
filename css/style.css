@@ -140,7 +140,7 @@ li a:hover {
   text-decoration: underline;
 }
 
-.cartWell, .choiceWell, .deliveryWell, .pickupWell, #show-pizza, #pickupEnd, #deliveryEnd {
+.cartmyCart, .choicemyCart, .deliverymyCart, .pickupmyCart, #show-pizza, #pickupEnd, #deliveryEnd {
   display: none;
 }
 
@@ -177,6 +177,7 @@ button#pickup, button#delivery {
 .form-control{
  
   color: white;
+  
 }
 .input{
   margin-top: 30px;
