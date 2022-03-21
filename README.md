@@ -4,7 +4,7 @@
 
 
 ## Screenshot
-<img src="https://github.com/SharonneKemboi/Pizzeria-Bellissima/blob/master/images/Screenshot%202from%202022-03-20%2022-02-38.png">
+<img src="https://github.com/SharonneKemboi/Pizzeria-Bellissima/blob/master/images/Screenshot3%20from%202022-03-21%2012-13-48.png">
 
 ## Screenshot
 <img src="https://github.com/SharonneKemboi/Pizzeria-Bellissima/blob/master/images/Screenshot%20from%202022-03-20%2013-31-14.png" width="900px" height="440px">
