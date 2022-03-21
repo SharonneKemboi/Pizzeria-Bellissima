@@ -38,13 +38,13 @@ function Pizza(crust, size) {
   Pizza.prototype.cost = function() {
     var price = 0;
     if (this.size === "Small") {
-      price += 7;
+      price += 5;
     } else if (this.size === "Medium") {
-      price += 9;
+      price += 8;
     } else if (this.size === "Large") {
-      price += 11;
+      price += 15;
     } else {
-      price+= 16;
+      price+= 20;
     }
 
   
@@ -54,7 +54,7 @@ function Pizza(crust, size) {
     if (this.crust === "Cripsy"){
         price += 2;
     }else if (this.crust=== "Stuffed") {
-        price += 1.5;
+        price += 3;
     }else {
         price += 1;
     }
