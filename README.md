@@ -6,8 +6,6 @@
 ## Screenshot
 <img src="https://github.com/SharonneKemboi/Pizzeria-Bellissima/blob/master/images/Screenshot3%20from%202022-03-21%2012-13-48.png">
 
-## Screenshot
-<img src="" width="900px" height="440px">
 
 ## Table of Content
 
